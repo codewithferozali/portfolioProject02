@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>My Portfolio</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+  
+
+  <!-- Favicons -->
+  
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+
+
+
+  <style>
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      margin-top: 2rem;
+    }
+  
+    .project-card {
+      position: relative;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  
+    .project-card img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+  
+    .project-card:hover img {
+      transform: scale(1.05);
+      filter: brightness(0.8);
+    }
+  
+    .project-card .card-content {
+      padding: 15px;
+      text-align: center;
+    }
+  
+    .project-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+  
+    .project-card p {
+      font-size: 1rem;
+      color: #7f8c8d;
+      margin-bottom: 15px;
+    }
+  
+    .project-card ul {
+      text-align: left;
+      padding: 0 20px;
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 15px;
+    }
+  
+    .project-card .button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+  
+    .project-card .button:hover {
+      background-color: #2980b9;
+    }
+  
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    }
+
+
+    <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    .section-title h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #333;
+      font-weight: 700;
+      position: relative;
+    }
+
+    .section-title h2::after {
+      content: '';
+      width: 60px;
+      height: 3px;
+      background: #007bff;
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .info-item {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .info-item i {
+      color: #007bff;
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .info-wrap {
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+
+    .info-wrap:hover {
+      transform: translateY(-5px);
+    }
+
+    iframe {
+      border-radius: 8px;
+    }
+
+    .btn-primary {
+      background-color: #007bff;
+      border: none;
+    }
+   
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
+    .contact-bg {
+      background: linear-gradient(135deg, #007bff, #0056b3);
+      color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .contact-bg i {
+      font-size: 50px;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  </style>
+  
+
+
+
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Feroz Ali</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a href="https://www.instagram.com/its_me_feroz_ali/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/feroz-ali-5b12b632b/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Project</a></li>
+  
+         
+        </li>
+        <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section dark-background">
+      <div class="hero-content">
+        
+        <a href="#projects" class="btn" data-aos="zoom-in" data-aos-delay="400">Explore Projects</a>
+      </div>
+      <div class="hero-graphic" data-aos="fade-left">
+        <img src="assets/img/linkden banner.jpeg" alt="Hero Graphic">
+      </div>
+    </section>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p>Hello! I am a passionate Full Stack Developer with a strong foundation in both front-end and back-end technologies. I enjoy creating efficient, scalable, and user-friendly web applications that combine functionality with aesthetics. My experience includes building dynamic and responsive projects, such as an e-commerce website featuring AI-driven live chat support, an engaging online quiz platform, and innovative AI-based content creation tools inspired by advancements in generative AI. I have also completed coursework in Modern C++ Programming through NPTEL (Swayam), further enhancing my programming skills. I am always eager to learn and apply the latest technologies to solve real-world problems, turning creative ideas into impactful solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/myimg.jfif" class="img-fluid" alt="" height="0px" width="280px">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>A Full Stack Developer</h2>
+            <br><br>
+            
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>1 Jan 2004</span></li>
+                  <br><br>
+                  
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>8088623193</span></li>
+                  <br><br>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Karnataka,India</span></li>
+                  <br><br>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone no:</strong> <span>8088623193</span></li>
+                  <br><br>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>20</span></li>
+                  <br><br>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Tech(Computer Science and Engineering)</span></li>
+                  <br><br>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>ferozalircr@gmail.com</span></li>
+                  <br><br>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Languages:</strong> <span>English,Kannada,Urdu,Hindi</span></li>
+                  <br><br>
+                  
+                </ul>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+      
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>HTML</span> <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>CSS</span> <i class="val">92%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="92"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JavaScript</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="95"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Java full stack</span> <i class="val">98%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="98"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Python</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>C++</span> <i class="val">88%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="88"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Hibernate FrameWork</span> <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="85"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Django </span> <i class="val">82%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="82"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Bootstrap</span> <i class="val">92%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="92"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Spring FrameWork</span> <i class="val">98%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="98"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JSP Framework</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>C(programing language)</span> <i class="val">98%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="98"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>Data Structure and Algorithm</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="95"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>Git and GitHub</span> <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="75"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>SQL(oracle,MySql)</span> <i class="val">86%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="86" aria-valuemin="0" aria-valuemax="86"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill"><span>MS word</span> <i class="val">95%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="95"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>MS Office</span> <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+            <div class="progress">
+              <span class="skill"><span>JDBC(java Database Connectivity)</span> <i class="val">88%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="88"></div>
+              </div>
+            </div><!-- End Skills Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section><!-- /Skills Section -->
+
+    <!-- Project Section -->
+<section id="resume" class="resume section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Projects</h2>
+    <p>Here are some of the key projects I have worked on, showcasing my skills in full-stack development, AI, and web technologies.</p>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="project-grid">
+      
+      <!-- E-commerce Website -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <img src="assets/img/E-commerec website.jfif" alt="E-commerce Website Screenshot">
+        <div class="card-content">
+          <h3>E-commerce Website</h3>
+          <p><em>Technologies: JSP, SQL, HTML, CSS, JavaScript</em></p>
+          <ul>
+            <li>Built a fully functional e-commerce platform featuring a men's clothing section.</li>
+            <li>Integrated an AI-based live chat feature for real-time assistance.</li>
+          </ul>
+          <a href="http://localhost:7750/Com.ShopNest/" target="_blank" class="button">View Project</a>
+        </div>
+      </div>
+
+      <!-- DSA Implementation Project -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="150">
+        <img src="assets/img/DSA projectimg.jfif" alt="DSA Project Screenshot">
+        <div class="card-content">
+          <h3>DSA Implementation Project</h3>
+          <p><em>Technologies: Java, Swing</em></p>
+          <ul>
+            <li>Implemented and visualized advanced algorithms for educational purposes.</li>
+            <li>Built an interactive desktop application to demonstrate algorithm functionalities.</li>
+          </ul>
+          <a href=" https://codewithferozali.github.io/Implementation-of-DSA-Project/" target="_blank" class="button">View Project</a>
+        </div>
+      </div>
+
+      <!-- Online Quiz Platform -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <img src="assets/img/quizimg.jfif" alt="Online Quiz Platform Screenshot">
+        <div class="card-content">
+          <h3>Online Quiz Platform</h3>
+          <p><em>Technologies: HTML, CSS, JavaScript, Node.js</em></p>
+          <ul>
+            <li>Created a dynamic platform for hosting interactive quizzes.</li>
+            <li>Added leaderboard functionality to engage users.</li>
+          </ul>
+          <a href="https://github.com/your-repo/quiz-platform" target="_blank" class="button">View Project</a>
+        </div>
+      </div>
+
+      <!-- Portfolio Website -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="250">
+        <img src="assets/img/portfolioimg.jfif" alt="Portfolio Website Screenshot">
+        <div class="card-content">
+          <h3>Portfolio Website</h3>
+          <p><em>Technologies: HTML, CSS, JavaScript, GitHub Pages</em></p>
+          <ul>
+            <li>Designed a responsive, minimalistic portfolio website with animations.</li>
+            <li>Deployed on GitHub Pages for wide accessibility.</li>
+          </ul>
+          <a href="file:///C:/Users/User/Desktop/My%20portfolio/iPortfolio-1.0.0/index.html" target="_blank" class="button">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section><!-- /Project Section -->
+
+
+
+            
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    
+
+   <!-- Contact Section -->
+  <section id="contact" class="contact section py-5">
+    <div class="container">
+      <!-- Section Title -->
+      <div class="section-title text-center mb-5" data-aos="fade-up">
+        <h2>Contact Us</h2>
+      </div>
+
+      <!-- Map and Contact Info -->
+      <div class="row g-4">
+        <!-- Map -->
+        <div class="col-lg-6" data-aos="fade-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            width="100%" height="350px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="info-wrap text-center">
+            <div class="info-item d-flex align-items-center justify-content-center">
+              <i class="fas fa-map-marker-alt"></i>
+              <p>Brethwarpet, 11-8-35, Raichur, Karnataka</p>
+            </div>
+
+            <div class="info-item d-flex align-items-center justify-content-center">
+              <i class="fas fa-phone-alt"></i>
+              <a href="tel:+918088623193" class="text-decoration-none">+91 8088623193</a>
+            </div>
+
+            <div class="info-item d-flex align-items-center justify-content-center">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:ferozalircr@gmail.com" class="text-decoration-none">ferozalircr@gmail.com</a>
+            </div>
+
+            <div class="info-item">
+              <a href="#" class="btn btn-primary mt-3">Contact Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
